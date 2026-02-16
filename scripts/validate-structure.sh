@@ -128,7 +128,7 @@ if [[ -n "$placeholder_hits" ]]; then
   ((errors+=1))
 fi
 
-vouch_ref="5713ce1baedf75e2f830afa3dac813a9c48bff12"
+vouch_ref="0e11a71bba23218a284d3ecca162e75a110fd7e3"
 if ! grep -q "mitchellh/vouch/action/check-pr@${vouch_ref}" ".github/workflows/vouch-check-pr.yml"; then
   echo "vouch-check-pr workflow must pin mitchellh/vouch/action/check-pr to ${vouch_ref}" >&2
   ((errors+=1))

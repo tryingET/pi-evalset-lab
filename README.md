@@ -158,7 +158,7 @@ Default behavior:
 - PR workflow runs on `pull_request_target` (`opened`, `reopened`).
 - `require-vouch: true` and `auto-close: true` are enabled by default.
 - Maintainers can comment `vouch`, `denounce`, or `unvouch` on issues to update trust state.
-- Vouch actions are SHA pinned (`5713ce1baedf75e2f830afa3dac813a9c48bff12`) for reproducibility and supply-chain review.
+- Vouch actions are SHA pinned (`0e11a71bba23218a284d3ecca162e75a110fd7e3`) for reproducibility and supply-chain review.
 
 Bootstrap step:
 
