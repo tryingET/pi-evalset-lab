@@ -1,0 +1,12 @@
+# Default owner for generated repositories. Update if you use a different maintainer/team.
+
+* @tryingET
+
+/.github/workflows/* @tryingET
+/.github/ISSUE_TEMPLATE/* @tryingET
+/.github/VOUCHED.td @tryingET
+/extensions/* @tryingET
+/package.json @tryingET
+/SECURITY.md @tryingET
+/.release-please-config.json @tryingET
+/.release-please-manifest.json @tryingET

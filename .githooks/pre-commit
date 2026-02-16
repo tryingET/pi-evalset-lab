@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+if command -v prek >/dev/null 2>&1; then
+  (cd "$ROOT_DIR" && prek run --hook-stage pre-commit)
+elif [[ -x "$ROOT_DIR/node_modules/.bin/prek" ]]; then
+  (cd "$ROOT_DIR" && "$ROOT_DIR/node_modules/.bin/prek" run --hook-stage pre-commit)
+else
+  "$ROOT_DIR/scripts/validate-structure.sh"
+fi

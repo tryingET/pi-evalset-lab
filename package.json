@@ -1,0 +1,23 @@
+{
+  "name": "pi-evalset-lab",
+  "version": "0.1.0",
+  "description": "pi extension package: pi-evalset-lab",
+  "type": "module",
+  "license": "MIT",
+  "keywords": ["pi-package"],
+  "scripts": {
+    "check": "bash ./scripts/validate-structure.sh",
+    "test": "bash ./scripts/validate-structure.sh",
+    "docs:list": "bash ./scripts/docs-list.sh",
+    "docs:list:workspace": "bash ./scripts/docs-list.sh --workspace --discover",
+    "docs:list:json": "bash ./scripts/docs-list.sh --json"
+  },
+  "pi": {
+    "extensions": ["./extensions/evalset.ts"],
+    "prompts": ["./prompts"]
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-ai": "*"
+  }
+}
