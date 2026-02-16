@@ -11,24 +11,29 @@ system4d:
 
 # Organization operating model
 
-```mermaid
-flowchart TD
-    OrganizationPurpose("Organization Purpose") -->|defines| OrganizationMission("Organization Mission")
-    OrganizationMission -->|leads to| OrganizationVision("Organization Vision")
-    OrganizationVision -->|is operationalized by| StrategicObjectives("Strategic Objectives")
-    OrganizationPurpose -->|inspires| CoreValues("Core Values")
-    CoreValues -->|shape| EthicsPolicy("Ethics Policy")
-    CoreValues -->|shape| OrganizationCulture("Organization Culture")
-    CoreValues -->|are expressed in| OrganizationCharter("Organization Charter")
-    OrganizationCharter -->|influences| EthicsPolicy
-    EthicsPolicy -->|guides behavior in| OrganizationCulture
-    OrganizationCulture -->|supports| StrategicObjectives
-```
+## Organization purpose
+Enable teams to build and operate AI-assisted software workflows that are reliable, auditable, and easy to improve.
 
-## Compact terminology
+## Organization mission (current)
+Provide practical tooling, standards, and documentation that make safe AI engineering the default path.
 
-- **Organization Purpose**: why the organization exists.
-- **Organization Mission**: what the organization does now.
-- **Organization Vision**: target future state.
-- **Strategic Objectives**: measurable outcomes that realize the vision.
-- **Core Values / Ethics / Culture / Charter**: behavioral system that supports strategy.
+## Organization vision
+A trusted ecosystem where AI coding workflows are reproducible, understandable, and continuously improving.
+
+## Organization strategic objectives
+1. Standardize evaluation workflows across active projects.
+2. Improve run traceability and reproducibility metadata.
+3. Keep onboarding friction low through concise, current documentation.
+4. Maintain secure-by-default release and dependency hygiene.
+5. Reduce ambiguity between interactive and non-interactive execution modes.
+
+## Core values
+- Clarity first
+- Evidence over assumption
+- Small, verifiable increments
+- Safety for high-impact changes
+- Respectful collaboration
+
+## Boundary
+Organization purpose is cross-project.
+Project-specific purpose is defined in [Project foundation model](../project/foundation.md).

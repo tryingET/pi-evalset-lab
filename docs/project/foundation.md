@@ -11,21 +11,18 @@ system4d:
 
 # Project foundation model
 
-```mermaid
-flowchart TD
-    ProjectPurpose("Project Purpose") -->|defines| ProjectMission("Project Mission")
-    ProjectMission -->|leads to| ProjectVision("Project Vision")
-    ProjectVision -->|is operationalized by| ProjectStrategicObjectives("Project Strategic Objectives")
-    ProjectPurpose -->|inspires| ProjectValues("Project Values")
-    ProjectValues -->|shape| ProjectEthics("Project Ethics")
-    ProjectValues -->|shape| ProjectCulture("Project Culture")
-    ProjectValues -->|are expressed in| ProjectCharter("Project Charter")
-    ProjectCharter -->|influences| ProjectEthics
-    ProjectEthics -->|guides behavior in| ProjectCulture
-    ProjectCulture -->|supports| ProjectStrategicObjectives
-```
+## Project purpose
+Build and maintain `pi-evalset-lab` as a practical extension package for fixed-task-set evaluations in pi.
+
+## Project mission (current cycle)
+Stabilize `/evalset` workflows, clarify execution behavior (especially `pi -e` and non-interactive mode), and keep reports reproducible.
 
 ## Scope boundary
+- Organization purpose lives in [Organization operating model](../org/operating_model.md).
+- This project purpose is repository-specific and narrower.
 
-- **Organization purpose** lives at org level and is documented in [Organization operating model](../org/operating_model.md).
-- **Project purpose** is repository-specific and can be narrower while staying aligned with organization strategy.
+## Project operating principles
+- Keep changes small and reviewable.
+- Prefer explicit run metadata over implicit assumptions.
+- Document behavior when UX is surprising.
+- Validate structure after meaningful changes.

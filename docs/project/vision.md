@@ -11,8 +11,11 @@ system4d:
 
 # Vision
 
-Deliver a dependable extension package that is easy to understand, validate, and evolve.
+Make `pi-evalset-lab` the lightweight default for comparing prompt/system variants with reproducible, inspectable reports.
 
-Project purpose for this repository is scoped to extension delivery and maintenance.
-It aligns with, but is distinct from, organization purpose documented in [Organization operating model](../org/operating_model.md).
-For the project-level concept map, see [Project foundation model](foundation.md).
+The project should feel predictable for maintainers:
+- clear command behavior in both interactive and `-p` modes,
+- clear report locations and run identity metadata,
+- clear docs for troubleshooting common setup confusion.
+
+Project vision is intentionally separate from organization vision in [Organization operating model](../org/operating_model.md).
