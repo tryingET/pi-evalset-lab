@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -15,10 +16,10 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+      issues: write
     steps:
       - name: Run release-please
         uses: googleapis/release-please-action@v4
         with:
-          command: manifest
           config-file: .release-please-config.json
           manifest-file: .release-please-manifest.json
