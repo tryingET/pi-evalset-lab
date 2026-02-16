@@ -11,6 +11,7 @@ system4d:
 
 # Next steps
 
-1. Add at least one automated test for argument parsing and expectation scoring.
-2. Add optional LLM-judge scoring mode (`expectJudgePrompt`) in dataset schema.
-3. Add compare table output (pass-rate/cost/latency deltas) in report details.
+1. Complete npm publish on npmjs (login, registry, publish, verify install).
+2. Add at least one automated test for argument parsing and expectation scoring.
+3. Add a small repeatable report-share helper (JSON -> static HTML export command/script).
+4. Evaluate optional LLM-judge scoring mode (`expectJudgePrompt`) after parser/scoring tests exist.

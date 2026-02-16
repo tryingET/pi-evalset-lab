@@ -11,11 +11,18 @@ system4d:
 
 # Tactical goals
 
-## Current cycle goals
-1. Add a short troubleshooting note explaining why `/evalset` must run inside pi (or via `pi -e ... -p`) and where output appears.
-2. Ensure compare/run commands always produce discoverable report paths.
-3. Add smoke tests for argument parsing and report file creation.
-4. Keep docs and changelog synchronized with behavior changes.
+## Current cycle status
+
+### Completed
+- Added troubleshooting notes for `/evalset` invocation (interactive vs `pi -p` non-interactive).
+- Kept run/compare reports discoverable under `.evalset/reports/`.
+- Added stronger example datasets (`fixed-task-set-v2.json`, `fixed-task-set-v3.json`).
+- Synchronized docs and changelog with behavior updates.
+
+### Remaining
+1. Add smoke tests for argument parsing and report/scoring behavior.
+2. Add a repeatable JSON -> HTML report export helper.
+3. Complete npm publish after npmjs auth/registry setup.
 
 ## Hard constraints
 - Time: keep work in small slices that can be reviewed quickly.
@@ -24,7 +31,9 @@ system4d:
 - Scope: prioritize reproducibility and UX clarity over feature breadth.
 
 ## Success criteria
-- `npm run check` passes.
-- At least one documented troubleshooting path for `pi -e` confusion exists.
-- Reports include stable run metadata and are easy to locate.
-- New maintainers can execute a compare workflow from README without intervention.
+- [x] `npm run check` passes.
+- [x] Documented troubleshooting path for `pi -e` confusion exists.
+- [x] Reports include stable run metadata and are easy to locate.
+- [x] New maintainers can execute a compare workflow from README without intervention.
+- [ ] Automated tests cover parser/scoring basics.
+- [ ] Package is published on npm.

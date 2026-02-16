@@ -13,6 +13,12 @@ system4d:
 
 - [Extension entrypoint](../../extensions/evalset.ts)
 - [Prompt templates](../../prompts)
+- [Smoke dataset](../../examples/fixed-task-set.json)
+- [Larger dataset v2](../../examples/fixed-task-set-v2.json)
+- [Recommended dataset v3](../../examples/fixed-task-set-v3.json)
+- [Baseline system prompt](../../examples/system-baseline.txt)
+- [Candidate system prompt](../../examples/system-candidate.txt)
+- Local report artifacts path: `.evalset/reports/*.json` (and optional `*.html` exports)
 - [Project-local router extension](../../.pi/extensions/startup-intake-router.ts)
 - [Organization operating model](../org/operating_model.md)
 - [Interview questions](../org/project-docs-intake.questions.json)
