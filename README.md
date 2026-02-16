@@ -46,7 +46,27 @@ This extension adds `/evalset` for fixed-task-set evaluation runs.
 /evalset compare <dataset.json> <baseline-system.txt> <candidate-system.txt> [--baseline-name <name>] [--candidate-name <name>] [--max-cases <n>] [--temperature <n>] [--out <report.json>]
 ```
 
-### Example workflow
+### Running modes
+
+`/evalset` is a pi slash command, not a shell executable.
+
+Interactive mode:
+
+```bash
+pi -e ./extensions/evalset.ts
+# then inside pi:
+/evalset compare examples/fixed-task-set.json examples/system-baseline.txt examples/system-candidate.txt
+```
+
+Non-interactive mode (scripts/CI):
+
+```bash
+pi -e ./extensions/evalset.ts -p "/evalset compare examples/fixed-task-set.json examples/system-baseline.txt examples/system-candidate.txt"
+# or, if extension already installed/enabled:
+pi -p "/evalset compare examples/fixed-task-set.json examples/system-baseline.txt examples/system-candidate.txt"
+```
+
+### Example workflow (inside pi)
 
 ```bash
 /evalset run examples/fixed-task-set.json --variant baseline

@@ -14,5 +14,6 @@ system4d:
 - Scaffold: complete
 - Extension behavior: `/evalset` MVP implemented (`init`, `run`, `compare`)
 - Example datasets/prompts: added under `examples/`
+- Invocation docs: clarified non-interactive usage via `pi -p` / `pi -e ... -p`
 - Validation hooks: installed
 - Tests: pending

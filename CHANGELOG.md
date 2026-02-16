@@ -29,6 +29,11 @@ All notable changes to this project should be documented here.
 - Added run identity metadata to reports (`runId`, `datasetHash`, `casesHash`, `variantHash`).
 - Reduced session message payload size by storing only lightweight report metadata instead of full report bodies.
 
+### Changed
+
+- Clarified `/evalset` invocation docs: use `pi -p` (or `pi -e ... -p`) for non-interactive runs; `/evalset` is not a standalone shell binary.
+- Added the same non-interactive invocation note to `/evalset help` output.
+
 ## [0.1.0] - 2026-02-08
 
 ### Added
