@@ -5,6 +5,14 @@
   "type": "module",
   "license": "MIT",
   "keywords": ["pi-package"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tryingET/pi-evalset-lab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tryingET/pi-evalset-lab/issues"
+  },
+  "homepage": "https://github.com/tryingET/pi-evalset-lab#readme",
   "scripts": {
     "check": "bash ./scripts/validate-structure.sh",
     "test": "bash ./scripts/validate-structure.sh",
