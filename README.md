@@ -73,6 +73,12 @@ pi -p "/evalset compare examples/fixed-task-set.json examples/system-baseline.tx
 /evalset compare examples/fixed-task-set.json examples/system-baseline.txt examples/system-candidate.txt
 ```
 
+### Included datasets
+
+- `examples/fixed-task-set.json` — tiny smoke set (3 cases)
+- `examples/fixed-task-set-v2.json` — larger first pass set
+- `examples/fixed-task-set-v3.json` — less brittle checks (recommended)
+
 The command writes JSON reports to:
 - explicit `--out <path>` when provided
 - otherwise `.evalset/reports/*.json` under your current project directory

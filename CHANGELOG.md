@@ -23,6 +23,8 @@ All notable changes to this project should be documented here.
   - `compare` to evaluate baseline vs candidate system prompts
 - Added example files in `examples/`:
   - `fixed-task-set.json`
+  - `fixed-task-set-v2.json`
+  - `fixed-task-set-v3.json`
   - `system-baseline.txt`
   - `system-candidate.txt`
 - Added report output support to `.evalset/reports/*.json` with per-case and aggregate metrics.
