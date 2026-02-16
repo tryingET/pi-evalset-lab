@@ -19,7 +19,7 @@ jobs:
       - name: Enforce vouch trust gate on PR author
         # require-vouch=true: unvouched users are treated as blocked.
         # auto-close=true: blocked PRs are automatically closed.
-        uses: mitchellh/vouch/action/check-pr@5713ce1baedf75e2f830afa3dac813a9c48bff12
+        uses: mitchellh/vouch/action/check-pr@0e11a71bba23218a284d3ecca162e75a110fd7e3
         with:
           pr-number: ${{ github.event.pull_request.number }}
           vouched-file: .github/VOUCHED.td
