@@ -22,7 +22,7 @@ system4d:
 
 - Run `npm run docs:list` at task start to surface docs and `read_when` hints.
 - Use `npm run docs:list:workspace` for workspace/monorepo scans.
-- If your docs-list script is not at `~/programming/agent-scripts/scripts/docs-list.mjs`, set `DOCS_LIST_SCRIPT`.
+- If your docs-list script is not at `~/ai-society/core/agent-scripts/scripts/docs-list.mjs`, set `DOCS_LIST_SCRIPT`.
 
 ## Validation
 

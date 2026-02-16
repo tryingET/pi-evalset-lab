@@ -173,7 +173,7 @@ Wrapper script: [scripts/docs-list.sh](scripts/docs-list.sh)
 Resolution order:
 1. `DOCS_LIST_SCRIPT`
 2. `./scripts/docs-list.mjs` (if vendored)
-3. `~/programming/agent-scripts/scripts/docs-list.mjs`
+3. `~/ai-society/core/agent-scripts/scripts/docs-list.mjs`
 
 ## Copier lifecycle policy
 
