@@ -1,10 +1,29 @@
 {
   "name": "pi-evalset-lab",
   "version": "0.1.0",
-  "description": "pi extension package: pi-evalset-lab",
+  "description": "pi extension for fixed-task-set eval runs and prompt/system comparisons",
   "type": "module",
   "license": "MIT",
-  "keywords": ["pi-package"],
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "evalset",
+    "llm-eval",
+    "prompt-evaluation",
+    "fixed-task-set",
+    "ux-observability",
+    "safety-governance",
+    "context-codebase-mapping",
+    "web-docs-retrieval",
+    "background-processes",
+    "review-quality-loops",
+    "planning-orchestration",
+    "subagents-parallelization",
+    "model-prompt-management",
+    "interactive-clis-editors",
+    "skills-rules-packs",
+    "paste-code-extraction"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tryingET/pi-evalset-lab.git"
@@ -13,6 +32,13 @@
     "url": "https://github.com/tryingET/pi-evalset-lab/issues"
   },
   "homepage": "https://github.com/tryingET/pi-evalset-lab#readme",
+  "files": [
+    "extensions/evalset.ts",
+    "prompts",
+    "examples",
+    "README.md",
+    "CHANGELOG.md"
+  ],
   "scripts": {
     "check": "bash ./scripts/validate-structure.sh",
     "test": "bash ./scripts/validate-structure.sh",

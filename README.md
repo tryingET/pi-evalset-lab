@@ -11,7 +11,9 @@ system4d:
 
 # pi-evalset-lab
 
-Production-ready starter scaffold for a pi extension package.
+Extension package for fixed-task-set eval workflows in pi (`/evalset run|compare`) with reproducible JSON reports.
+
+Primary category fit: **Model & Prompt Management**, **Review & Quality Loops**, **UX & Observability**, **Safety & Governance**.
 
 ## Quickstart
 
@@ -32,6 +34,38 @@ Production-ready starter scaffold for a pi extension package.
    ```bash
    pi install /absolute/path/to/pi-evalset-lab
    ```
+
+## Runtime dependencies and packaged files
+
+This extension depends on pi host APIs and declares them as `peerDependencies`:
+
+- `@mariozechner/pi-coding-agent`
+- `@mariozechner/pi-ai`
+
+In normal usage, pi provides these at runtime when loading the package.
+
+The npm package also uses a `files` whitelist so required runtime artifacts are explicitly included:
+
+- `extensions/evalset.ts`
+- `prompts/`
+- `examples/` (sample datasets + sample report UI)
+
+## Category taxonomy (reference)
+
+Keyword slugs used for extension categorization:
+
+- `ux-observability` (UX & Observability)
+- `safety-governance` (Safety & Governance)
+- `context-codebase-mapping` (Context & Codebase Mapping)
+- `web-docs-retrieval` (Web & Docs Retrieval)
+- `background-processes` (Background / Long-running Processes)
+- `review-quality-loops` (Review & Quality Loops)
+- `planning-orchestration` (Planning & Orchestration)
+- `subagents-parallelization` (Subagents / Parallelization)
+- `model-prompt-management` (Model & Prompt Management)
+- `interactive-clis-editors` (Interactive CLIs / Editors)
+- `skills-rules-packs` (Skills & Rules Packs)
+- `paste-code-extraction` (Paste / Code Extraction)
 
 ## evalset command (MVP)
 
@@ -66,6 +100,9 @@ pi -e ./extensions/evalset.ts -p "/evalset compare examples/fixed-task-set.json 
 pi -p "/evalset compare examples/fixed-task-set.json examples/system-baseline.txt examples/system-candidate.txt"
 ```
 
+Interactive sessions use pi UI hooks (`ctx.ui`) for status/notify updates.
+In non-interactive `-p` mode, those UI calls are safely skipped (`ctx.hasUI === false`).
+
 ### Example workflow (inside pi)
 
 ```bash
@@ -78,6 +115,15 @@ pi -p "/evalset compare examples/fixed-task-set.json examples/system-baseline.tx
 - `examples/fixed-task-set.json` — tiny smoke set (3 cases)
 - `examples/fixed-task-set-v2.json` — larger first pass set
 - `examples/fixed-task-set-v3.json` — less brittle checks (recommended)
+
+### Sample visual output (in repo)
+
+- `examples/evalset-compare-sample-embedded.html` — self-contained report UI with embedded compare JSON
+- `examples/evalset-compare-sample.png` — screenshot preview of that HTML report
+
+Preview:
+
+![Evalset compare sample screenshot](examples/evalset-compare-sample.png)
 
 The command writes JSON reports to:
 - explicit `--out <path>` when provided

@@ -25,6 +25,8 @@ All notable changes to this project should be documented here.
   - `fixed-task-set.json`
   - `fixed-task-set-v2.json`
   - `fixed-task-set-v3.json`
+  - `evalset-compare-sample-embedded.html`
+  - `evalset-compare-sample.png`
   - `system-baseline.txt`
   - `system-candidate.txt`
 - Added report output support to `.evalset/reports/*.json` with per-case and aggregate metrics.
@@ -35,6 +37,7 @@ All notable changes to this project should be documented here.
 
 - Clarified `/evalset` invocation docs: use `pi -p` (or `pi -e ... -p`) for non-interactive runs; `/evalset` is not a standalone shell binary.
 - Added the same non-interactive invocation note to `/evalset help` output.
+- Declared publish-time runtime artifacts with `package.json` `files` whitelist and documented peer/runtime dependency behavior in README.
 
 ## [0.1.0] - 2026-02-08
 
