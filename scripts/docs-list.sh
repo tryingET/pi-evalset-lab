@@ -43,7 +43,7 @@ fi
 
 if [[ ! -f "$SCRIPT_PATH" ]]; then
   echo "Error: docs-list script not found: $SCRIPT_PATH" >&2
-  echo "Set DOCS_LIST_SCRIPT to your docs-list.mjs path, or install agent-scripts at: $DEFAULT_SCRIPT" >&2
+  echo "Set DOCS_LIST_SCRIPT to your docs-list.mjs path, or place docs-list script at: $DEFAULT_SCRIPT" >&2
   exit 1
 fi
 
