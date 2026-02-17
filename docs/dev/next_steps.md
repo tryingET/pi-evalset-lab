@@ -11,7 +11,7 @@ system4d:
 
 # Next steps
 
-1. Complete npm publish on npmjs (login, registry, publish, verify install).
+1. Create a user-facing `fix:`/`feat:` commit and run release-please flow for trusted publish verification.
 2. Add at least one automated test for argument parsing and expectation scoring.
-3. Add a small repeatable report-share helper (JSON -> static HTML export command/script).
+3. Verify the JSON -> HTML helper on fresh run reports and document any UX gaps.
 4. Evaluate optional LLM-judge scoring mode (`expectJudgePrompt`) after parser/scoring tests exist.

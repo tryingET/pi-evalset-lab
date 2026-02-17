@@ -18,14 +18,12 @@ system4d:
 - Configured npm trusted publisher for GitHub release-based publishing.
 - Clarified `/evalset` invocation behavior (`pi -p` / `pi -e ... -p`) and report location docs.
 - Added sample visual report artifacts in `examples/`.
+- Added repeatable JSON -> static HTML export helper (`npm run evalset:export-html`).
 
 ### Remaining
-1. Finalize and commit local changes in coherent groups.
-2. Run `npm run check` and `npm pack --dry-run` before the next release.
-3. Ship the next user-facing release and verify trusted publishing works without npm token secrets.
-4. Add smoke tests for argument parsing and scoring behavior.
-5. Add a repeatable JSON -> HTML report export helper.
-6. Revoke the bootstrap npm token if it is still active.
+1. Ship the next user-facing release and verify trusted publishing works without npm token secrets.
+2. Add smoke tests for argument parsing and scoring behavior.
+3. Revoke the bootstrap npm token if it is still active.
 
 ## Hard constraints
 - Time: keep work in small slices that can be reviewed quickly.
@@ -35,8 +33,8 @@ system4d:
 
 ## Success criteria
 - [ ] Working tree is clean with intentional, reviewable commits.
-- [ ] `npm run check` passes.
-- [ ] `npm pack --dry-run` succeeds with expected package contents.
+- [x] `npm run check` passes.
+- [x] `npm pack --dry-run` succeeds with expected package contents.
 - [ ] Trusted publishing is verified on a new npm release.
 - [ ] Automated tests cover parser/scoring basics.
-- [ ] JSON -> HTML report export helper is available and documented.
+- [x] JSON -> HTML report export helper is available and documented.

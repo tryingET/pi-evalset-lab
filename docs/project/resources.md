@@ -19,6 +19,7 @@ system4d:
 - [Baseline system prompt](../../examples/system-baseline.txt)
 - [Candidate system prompt](../../examples/system-candidate.txt)
 - Local report artifacts path: `.evalset/reports/*.json` (and optional `*.html` exports)
+- [JSON -> HTML export helper](../../scripts/export-evalset-report-html.mjs)
 - [Project-local router extension](../../.pi/extensions/startup-intake-router.ts)
 - [Organization operating model](../org/operating_model.md)
 - [Interview questions](../org/project-docs-intake.questions.json)

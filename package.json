@@ -36,6 +36,7 @@
     "extensions/evalset.ts",
     "prompts",
     "examples",
+    "scripts/export-evalset-report-html.mjs",
     "README.md",
     "CHANGELOG.md"
   ],
@@ -44,7 +45,8 @@
     "test": "bash ./scripts/validate-structure.sh",
     "docs:list": "bash ./scripts/docs-list.sh",
     "docs:list:workspace": "bash ./scripts/docs-list.sh --workspace --discover",
-    "docs:list:json": "bash ./scripts/docs-list.sh --json"
+    "docs:list:json": "bash ./scripts/docs-list.sh --json",
+    "evalset:export-html": "node ./scripts/export-evalset-report-html.mjs"
   },
   "pi": {
     "extensions": ["./extensions/evalset.ts"],

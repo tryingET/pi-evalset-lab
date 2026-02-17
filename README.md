@@ -137,6 +137,18 @@ Each report includes run identity metadata:
 
 Session messages only keep lightweight report metadata (`reportPath`, ids, summary metrics), not full report bodies.
 
+### Export report JSON to static HTML
+
+Use the helper script to create a shareable standalone HTML file from any evalset JSON report:
+
+```bash
+npm run evalset:export-html -- --in .evalset/reports/compare-your-dataset-YYYYMMDDTHHMMSS.json
+# optional:
+npm run evalset:export-html -- --in .evalset/reports/run-your-dataset-YYYYMMDDTHHMMSS.json --out .evalset/reports/run-your-dataset.html --title "Evalset run report"
+```
+
+Script: [scripts/export-evalset-report-html.mjs](scripts/export-evalset-report-html.mjs)
+
 ## Optional core hooks (future, not required for this MVP)
 
 This extension works today without core changes. If we decide to harden further, optional core support could include:

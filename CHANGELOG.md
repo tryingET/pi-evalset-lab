@@ -32,6 +32,7 @@ All notable changes to this project should be documented here.
 - Added report output support to `.evalset/reports/*.json` with per-case and aggregate metrics.
 - Added run identity metadata to reports (`runId`, `datasetHash`, `casesHash`, `variantHash`).
 - Reduced session message payload size by storing only lightweight report metadata instead of full report bodies.
+- Added `scripts/export-evalset-report-html.mjs` and `npm run evalset:export-html` for repeatable JSON -> static HTML report exports.
 
 ### Changed
 
