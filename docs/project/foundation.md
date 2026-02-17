@@ -15,11 +15,11 @@ system4d:
 Build and maintain `pi-evalset-lab` as a practical extension package for fixed-task-set evaluations in pi.
 
 ## Project mission (current cycle)
-Stabilize `/evalset` workflows, clarify execution behavior (especially `pi -e` and non-interactive mode), and keep reports reproducible.
+Continue from [NEXT_SESSION_PROMPT.md](../../NEXT_SESSION_PROMPT.md): stabilize post-`0.1.0` delivery by verifying trusted publishing on the next release, improving evaluation reliability, and keeping reports reproducible.
 
 ## Scope boundary
 - Organization purpose lives in [Organization operating model](../org/operating_model.md).
-- This project purpose is repository-specific and narrower.
+- This project purpose is repository-specific and intentionally narrower.
 
 ## Project operating principles
 - Keep changes small and reviewable.

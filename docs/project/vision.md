@@ -16,6 +16,6 @@ Make `pi-evalset-lab` the lightweight default for comparing prompt/system varian
 The project should feel predictable for maintainers:
 - clear command behavior in both interactive and `-p` modes,
 - clear report locations and run identity metadata,
-- clear docs for troubleshooting common setup confusion.
+- clear docs for troubleshooting and release verification.
 
 Project vision is intentionally separate from organization vision in [Organization operating model](../org/operating_model.md).

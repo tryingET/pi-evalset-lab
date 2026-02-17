@@ -14,26 +14,29 @@ system4d:
 ## Current cycle status
 
 ### Completed
-- Added troubleshooting notes for `/evalset` invocation (interactive vs `pi -p` non-interactive).
-- Kept run/compare reports discoverable under `.evalset/reports/`.
-- Added stronger example datasets (`fixed-task-set-v2.json`, `fixed-task-set-v3.json`).
-- Synchronized docs and changelog with behavior updates.
+- Published `pi-evalset-lab@0.1.0` to npm (bootstrap-token path).
+- Configured npm trusted publisher for GitHub release-based publishing.
+- Clarified `/evalset` invocation behavior (`pi -p` / `pi -e ... -p`) and report location docs.
+- Added sample visual report artifacts in `examples/`.
 
 ### Remaining
-1. Add smoke tests for argument parsing and report/scoring behavior.
-2. Add a repeatable JSON -> HTML report export helper.
-3. Complete npm publish after npmjs auth/registry setup.
+1. Finalize and commit local changes in coherent groups.
+2. Run `npm run check` and `npm pack --dry-run` before the next release.
+3. Ship the next user-facing release and verify trusted publishing works without npm token secrets.
+4. Add smoke tests for argument parsing and scoring behavior.
+5. Add a repeatable JSON -> HTML report export helper.
+6. Revoke the bootstrap npm token if it is still active.
 
 ## Hard constraints
 - Time: keep work in small slices that can be reviewed quickly.
 - Quality: no regressions in existing `/evalset` commands.
-- Security: no insecure defaults in scripts or extension loading.
+- Security: no insecure defaults in scripts, release workflows, or extension loading.
 - Scope: prioritize reproducibility and UX clarity over feature breadth.
 
 ## Success criteria
-- [x] `npm run check` passes.
-- [x] Documented troubleshooting path for `pi -e` confusion exists.
-- [x] Reports include stable run metadata and are easy to locate.
-- [x] New maintainers can execute a compare workflow from README without intervention.
+- [ ] Working tree is clean with intentional, reviewable commits.
+- [ ] `npm run check` passes.
+- [ ] `npm pack --dry-run` succeeds with expected package contents.
+- [ ] Trusted publishing is verified on a new npm release.
 - [ ] Automated tests cover parser/scoring basics.
-- [ ] Package is published on npm.
+- [ ] JSON -> HTML report export helper is available and documented.
