@@ -13,6 +13,13 @@ system4d:
 
 All notable changes to this project should be documented here.
 
+## [0.2.0](https://github.com/tryingET/pi-evalset-lab/compare/v0.1.0...v0.2.0) (2026-02-17)
+
+
+### Features
+
+* **evalset:** add JSON to HTML report export helper ([802e7d2](https://github.com/tryingET/pi-evalset-lab/commit/802e7d2a13a44205e519e0f0c778788fd093340f))
+
 ## [Unreleased]
 
 ### Added
